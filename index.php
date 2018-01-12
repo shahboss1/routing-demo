@@ -16,5 +16,22 @@
         echo '<h1>Routing Demo</h1>';
     });
 
-    //Run fat free
+    $f3->route('GET /page1', function(){
+
+    echo '<h1>Page 1</h1>';
+    });
+
+    $f3->route('GET /page2', function(){
+
+    echo '<h1>page 2</h1>';
+    });
+
+    $f3->route('GET /page1/subpage-a', function(){
+
+    echo '<h1>pssttttt i got this</h1>';
+});
+
+
+
+//Run fat free
     $f3->run();
